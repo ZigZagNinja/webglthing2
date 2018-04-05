@@ -11,7 +11,7 @@ var InitDemo = function () {
 					alert('Fatal error getting fragment shader (see console)');
 					console.error(fsErr);
 				} else {
-					loadJSONResource('ding.json', function (modelErr, modelObj) {
+					loadJSONResource('dings.json', function (modelErr, modelObj) {
 						if (modelErr) {
 							alert('Fatal error getting Susan model (see console)');
 							console.error(fsErr);
