@@ -3,7 +3,7 @@ var gl;
 var InitDemo = function () {
 	loadTextResource('shader.vs.glsl', function (vsErr, vsText) {
 		if (vsErr) {
-			alert('Fatal error getting vertex shader (see console)');
+			alert('Fatal error getting vertex shader (see console)')
 			console.error(vsErr);
 		} else {
 			loadTextResource('shader.fs.glsl', function (fsErr, fsText) {
@@ -14,6 +14,7 @@ var InitDemo = function () {
 					loadJSONResource('dings.json', function (modelErr, modelObj) {
 						if (modelErr) {
 							alert('Fatal error getting Susan model (see console)');
+							alert("very weird");
 							console.error(fsErr);
 						} else {
 							loadImage('SusanTexture.png', function (imgErr, img) {
